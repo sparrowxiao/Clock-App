@@ -3,6 +3,9 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import './assets/fonts/Inter/static/Inter-Bold.ttf';
+import './assets/fonts/Inter/static/Inter-Light.ttf';
+import './assets/fonts/Inter/static/Inter-Regular.ttf';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(

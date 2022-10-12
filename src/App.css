@@ -1,12 +1,65 @@
 .App {
-  text-align: center;
+  background-image: url('../src/assets/desktop/bg-image-daytime.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  /*mask-image: linear-gradient(transparent 4%,#000);*/
+  
 }
-
-.App-logo {
-  height: 40vmin;
+.Overlay{
+  background-color:rgba(0,0,0,0.3);
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+.Top,.Bottom{
+  color: #fff;
+  margin:4rem;
+  flex:1 1 50%;
+}
+.Top{
+  width:50%;
+}
+.Quote{
+  font-size:18px;
+  font-family: "InterRegular";
+}
+.Author{
+  font-size:18px;
+  font-family: "InterBold";
+}
+.Greeting{
+  font-size:20px;
+  line-height: 28px;
+  font-family: "InterRegular";
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+}
+.Greeting-logo {
+  width: 22px;
   pointer-events: none;
+  padding-right: 22px;
+}
+.Clock{
+  font-size:200px;
+  font-family: "InterBold";
+}
+.Clock>.Time-zone{
+  font-size:40px;
+  font-family: "InterLight";
+}
+.Location{
+  font-size:40px;
+  font-family: "InterBold";
+  letter-spacing: 4.8px;
+  text-transform: uppercase;
 }
 
+
+/*
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
@@ -14,7 +67,6 @@
 }
 
 .App-header {
-  background-color: #282c34;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -26,7 +78,7 @@
 
 .App-link {
   color: #61dafb;
-}
+}*/
 
 @keyframes App-logo-spin {
   from {
