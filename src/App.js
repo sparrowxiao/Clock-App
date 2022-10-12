@@ -43,6 +43,11 @@ function App() {
          .catch((err) => {
             console.log(err.message);
          });
+    var timer = setInterval(()=>setTime(new Date()), 1000 )
+    return function cleanup() {
+        clearInterval(timer)
+    }
+    
   });
   return (
     <div className="App" style={{backgroundImage: `url(${bgImageURL})` }}>
