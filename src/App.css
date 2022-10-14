@@ -20,6 +20,12 @@
 .Top{
   width:50%;
 }
+.Bottom{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-end;
+}
 .Quote{
   font-size:18px;
   font-family: "InterRegular";
@@ -55,6 +61,50 @@
   font-family: "InterBold";
   letter-spacing: 4.8px;
   text-transform: uppercase;
+}
+.ExpandButton{
+  background-color: #ffffff;
+  width:146px;
+  border-radius: 30px;
+  padding: .5rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  cursor: pointer;
+}
+.ExpandButton .ButtonName{
+  font-family: "InterBold";
+  font-size:16px;
+  line-height: 28px;
+  letter-spacing: 5px;
+  color:#000000;
+  text-transform: uppercase;
+  opacity: .5;
+  display: flex;
+  align-items: flex-end;
+  padding-left:15px;
+}
+.ExpandButton .ArrowBg{
+  width: 40px;
+  height:40px;
+  background-color: #000000;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.ExpandButton:hover .ArrowBg{
+  background-color:#999999 ;
+}
+.ArrowBg img{
+  width: 12px;
+  height: auto;
+}
+
+.ExpandPanel{
+  background-color: #ffffff;
+  opacity: .8;
 }
 
 
