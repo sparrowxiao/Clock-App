@@ -92,7 +92,7 @@ function App() {
   const toggleButton=()=>{
     console.log("toggle button function is triggered");
     setTopPanelState(topPanelState==="block" ? "none" : "block");
-    setExpPanelState(expPanelState==="block" ? "none" : "block");
+    setExpPanelState(expPanelState==="flex" ? "none" : "flex");
     setbtnExpTitleState(btnExpTitle==="more" ? "less" : "more");
     setArrowIcon(iconArrow === iarrowdown ? iarrowup : iarrowdown);
 
@@ -124,7 +124,7 @@ function App() {
           <div className="EP-left">
             <div className="Date-detail">
               <div className="Description">CURRENT TIMEZONE</div>
-              <div className="Detailv">currentTimeZone</div>
+              <div className="Detail">currentTimeZone</div>
             </div>
             <div className="Date-detail">
               <div className="Description">DAY OF THE YEAR</div>
